@@ -56,14 +56,17 @@ Avg Annual Salary = AVERAGE ( Fact_Employees[Annual Salary] )
 ### Page 1 — Workforce Diversity
 Gender, ethnicity, and age-band distribution, plus an ethnicity × gender matrix with conditional formatting to surface intersectional patterns that single-dimension charts can't show.
 **Finding:** Black employees represent just 7.4% of the workforce — notably lower than the other three ethnic groups — while gender balance stays close to even (~51/49) within every group.
+<img width="1485" height="829" alt="page1-workforce-diversity" src="https://github.com/user-attachments/assets/6ff81c84-efa1-418e-9c08-c024e2bea57c" />
 
 ### Page 2 — Geographic Distribution
 Interactive bubble map (using true latitude/longitude coordinates, not text-based auto-geocoding, for accuracy) plus a treemap for precise headcount comparison across offices.
 **Finding:** 64% of the workforce is US-based across 6 cities, with Seattle as the largest single office (118 employees). Despite the geographic spread, average salary is nearly identical across all three countries (~$112K–114K) — no evidence of location-based pay disparity.
+<img width="1483" height="828" alt="page2-geographic-distribution" src="https://github.com/user-attachments/assets/4aaaefe5-9999-46b3-b8c7-5ea2379abc7f" />
 
 ### Page 3 — Pay Analysis
 Average salary by job title and by department, with the 3-person Board Member/executive tier deliberately isolated from comparative visuals (their $258K average pay is roughly double the next tier and would distort any shared color/axis scale if included).
 **Finding:** Excluding the executive tier, department averages span a fairly tight $98K–$129K range. Marketing pays the most among individual-contributor departments ($129K), while IT trails every other department at $98K — a pattern that holds consistently, not just as an isolated department-level average. Job Title tells a complementary story: System Administrator ($203K) unusually outpaces Director ($172K), which would be worth validating with the business in a real engagement rather than assuming it's correct at face value.
+<img width="1474" height="832" alt="page3-pay-analysis" src="https://github.com/user-attachments/assets/f20f00c5-6678-480d-a831-3b432a5a681b" />
 
 ## What I'd Build Next
 With more time, this model is already structured to support: turnover rate trend (using the same `Average Number of Employees` cohort logic as Retention Rate), pay equity analysis controlling for job title and tenure simultaneously, and a bonus-trend page using the existing `Dim_Date` relationship.
